@@ -1,38 +1,23 @@
 ---
-title: Hello World
+title: Playdog 介绍
 ---
-Welcome to [Hexo](https://hexo.io/)! This is your very first post. Check [documentation](https://hexo.io/docs/) for more info. If you get any problems when using Hexo, you can find the answer in [troubleshooting](https://hexo.io/docs/troubleshooting.html) or you can ask me on [GitHub](https://github.com/hexojs/hexo/issues).
 
-## Quick Start
+## 简述
 
-### Create a new post
+playdog nft 是一个发行在 opensea.io 上的 nft 项目。此项目以一只现实中存在的小狗为原型，结合 125 种不同的颜色，创建了很多不同的 nft 形象。此项目初期分为两个 collection，第一个 collection 叫做 playdog-pure。此 collection 总共包含 125 个 nft 形象，每个形象对应一个颜色。第二个 collection 叫做 playdog-mixed，此 collection 中每个 nft 都会配置两个不同的可变颜色，所以总量将为 15500 个 （125\*125-125=15500）。
 
-``` bash
-$ hexo new "My New Post"
-```
+playdog-pure 中的 125 个 nft 都已全部发行，playdog-mixed 由于 nft 数量众多，将在以后的项目运行中逐步发行。
 
-More info: [Writing](https://hexo.io/docs/writing.html)
+## 125 色原理
 
-### Run server
+playdog nft 的创作过程中使用了 125 种可变颜色，其生成原理是将红绿蓝三原色每种颜色都按照深浅程度 5 等分。这样排列组合就总共形成了 125 种颜色。
 
-``` bash
-$ hexo server
-```
+计算机中将三原色颜色深浅程度按程度划分为 0-255，我们将其 5 等分，则分别为 0，64，128，192，255。对应的 16 进制计数则依次为 00，40，80，c0，ff。以 039 号 playdog-pure 为例子。其编码为#4080c0，则代表其颜色组成为五分之一程度的纯红加上五分之二程度的纯绿以及五分之三程度的纯蓝。这样，因为所有颜色都可以由三原色调和而成。所以所有的颜色都能在这 125 种颜色中找到代表色，且肉眼几乎无法区分它与它的代表色的区别。
 
-More info: [Server](https://hexo.io/docs/server.html)
+## 如何购买 playdog
 
-### Generate static files
+我们将不定期在 opensea.io 上公开拍卖 playdog nft，计划初期每次仅拍卖 1-5 个。如果你有喜欢的 nft，也可加入电报群https://t.me/playdog_io 向我们报价，如果合适我们会将其列入公开拍卖或者在你出价后将此 nft 转交给你。
 
-``` bash
-$ hexo generate
-```
+## 项目发展
 
-More info: [Generating](https://hexo.io/docs/generating.html)
-
-### Deploy to remote sites
-
-``` bash
-$ hexo deploy
-```
-
-More info: [Deployment](https://hexo.io/docs/one-command-deployment.html)
+为了让 playdog 具有更高的价值，我们计划长期对其进行推广和开发，事实上 playdog nft 并不是 playdog 的第一个项目，我们之前也启动过一条基于 substrate 技术的 playdog 链。如果一切顺利我们希望能以 playdog 为 ip 创造一个元宇宙，而持有 playdog nft 的加密地址在这个元宇宙中将会拥有更高的权限。
